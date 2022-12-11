@@ -1,15 +1,12 @@
 module.exports = mongoose => {
-    const Tutorial = mongoose.model(
-        'tutorial',
+    const Thing = mongoose.model(
+        'thing',
         mongoose.Schema(
             {
-                title: String,
-                description: String,
-                published: Boolean
+                name: String
             },
-            { timestamps: true }
         )
     );
 
-    return Tutorial;
+    return Thing;
 };
