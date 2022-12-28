@@ -2,17 +2,16 @@
   "name": "mean-setup",
   "version": "0.1.0",
   "description": "basic setup for MEAN web app",
-  "main": "index.js",
+  "main": "server.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zedzelenak/mean-setup.git"
   },
   "scripts": {
     "ng": "ng",
-    "start": "ng start",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "ui-start": "ng start",
+    "ui-build": "ng build",
+    "app-start": "node server.js"
   },
   "license": "ISC",
   "dependencies": {
